@@ -1030,3 +1030,48 @@ footer > p {
     }
 
 }
+/* ================= JS ANIMATIONS ================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar nav a.active {
+    color: #5b806b;
+    font-weight: 700;
+}
+
+
+/* ================= MOBILE NAV ================= */
+
+@media (max-width: 800px) {
+
+    .navbar nav.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 5%;
+        right: 5%;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(50, 70, 58, 0.12);
+        border: 1px solid #eeeae1;
+    }
+
+    .navbar nav.active a {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+}
