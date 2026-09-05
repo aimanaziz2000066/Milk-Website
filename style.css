@@ -48,14 +48,14 @@ button {
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 28px;
+    gap: 10px;
+    font-size: 32px;
     font-weight: 800;
     color: #5b806b;
 }
 
 .logo i {
-    font-size: 31px;
+    font-size: 35px;
 }
 
 .navbar nav {
@@ -65,7 +65,7 @@ button {
 }
 
 .navbar nav a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #56635c;
     transition: 0.3s ease;
@@ -82,12 +82,12 @@ button {
 }
 
 .cart-btn {
-    width: 43px;
-    height: 43px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #eef4ef;
     color: #527760;
-    font-size: 19px;
+    font-size: 23px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -101,12 +101,12 @@ button {
     position: absolute;
     top: -4px;
     right: -3px;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #5b806b;
     color: white;
-    font-size: 9px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,12 +114,12 @@ button {
 
 .menu-btn {
     display: none;
-    width: 43px;
-    height: 43px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #eef4ef;
     color: #527760;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 /* ================= HERO ================= */
@@ -145,20 +145,20 @@ button {
 .small-title {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: #6b9079;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .small-title i {
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .hero h1 {
     max-width: 650px;
-    font-size: clamp(48px, 6vw, 82px);
+    font-size: clamp(52px, 6vw, 88px);
     line-height: 1.06;
     letter-spacing: -3px;
     color: #26352d;
@@ -173,7 +173,7 @@ button {
 .hero-text {
     max-width: 530px;
     margin-top: 25px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.9;
     color: #758078;
 }
@@ -190,14 +190,18 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 15px 24px;
+    padding: 17px 30px;
     border-radius: 50px;
     background: #5f836d;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     box-shadow: 0 12px 25px rgba(95, 131, 109, 0.2);
     transition: 0.3s ease;
+}
+
+.primary-btn i {
+    font-size: 18px;
 }
 
 .primary-btn:hover {
@@ -210,13 +214,18 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 24px;
+    gap: 9px;
+    padding: 16px 30px;
     border-radius: 50px;
     border: 1px solid #d9e1da;
     color: #5d6c63;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     transition: 0.3s ease;
+}
+
+.secondary-btn i {
+    font-size: 18px;
 }
 
 .secondary-btn:hover {
@@ -236,12 +245,12 @@ button {
 }
 
 .hero-stats strong {
-    font-size: 22px;
+    font-size: 25px;
     color: #456553;
 }
 
 .hero-stats span {
-    font-size: 11px;
+    font-size: 13px;
     color: #8a938d;
     margin-top: 3px;
 }
@@ -313,7 +322,7 @@ button {
 .milk-bottle > i {
     position: absolute;
     top: 75px;
-    font-size: 47px;
+    font-size: 55px;
     color: #6d927b;
 }
 
@@ -331,19 +340,19 @@ button {
 }
 
 .bottle-label small {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 3px;
     color: #76907e;
 }
 
 .bottle-label strong {
-    font-size: 29px;
+    font-size: 32px;
     color: #527460;
     letter-spacing: 2px;
 }
 
 .bottle-label span {
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 1px;
     color: #89958c;
 }
@@ -353,8 +362,8 @@ button {
     z-index: 5;
     display: flex;
     align-items: center;
-    gap: 11px;
-    padding: 13px 17px;
+    gap: 13px;
+    padding: 15px 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -362,15 +371,15 @@ button {
 }
 
 .floating-card > i {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: #edf4ed;
     color: #5f836d;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .floating-card div {
@@ -379,12 +388,12 @@ button {
 }
 
 .floating-card strong {
-    font-size: 11px;
+    font-size: 13px;
     color: #45564c;
 }
 
 .floating-card small {
-    font-size: 9px;
+    font-size: 10px;
     color: #9a9f9b;
     margin-top: 2px;
 }
@@ -407,7 +416,7 @@ button {
 }
 
 .section-heading > p {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 3px;
     color: #72917c;
     font-weight: 700;
@@ -415,7 +424,7 @@ button {
 }
 
 .section-heading h2 {
-    font-size: clamp(32px, 4vw, 50px);
+    font-size: clamp(36px, 4vw, 54px);
     line-height: 1.2;
     color: #2c3b33;
     margin-bottom: 12px;
@@ -427,7 +436,7 @@ button {
 
 .section-heading > span {
     color: #89928c;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* ================= PRODUCTS ================= */
@@ -519,7 +528,7 @@ button {
     top: 34px;
     left: 40px;
     color: #70927c;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .chocolate .product-bottle i {
@@ -539,7 +548,7 @@ button {
 }
 
 .product-category {
-    font-size: 9px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #79917f;
@@ -547,13 +556,13 @@ button {
 }
 
 .product-info h3 {
-    font-size: 19px;
+    font-size: 21px;
     color: #35443b;
     margin: 7px 0;
 }
 
 .product-info p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.7;
     color: #929993;
 }
@@ -567,16 +576,16 @@ button {
 
 .product-bottom strong {
     color: #557663;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .add-btn {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: #5f836d;
     color: white;
-    font-size: 19px;
+    font-size: 22px;
     transition: 0.3s ease;
 }
 
@@ -640,7 +649,7 @@ button {
 }
 
 .about-circle i {
-    font-size: 90px;
+    font-size: 100px;
     color: #6d927b;
 }
 
@@ -650,14 +659,14 @@ button {
 
 .section-label {
     color: #70917b;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 3px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .about-content h2 {
-    font-size: clamp(35px, 4vw, 54px);
+    font-size: clamp(38px, 4vw, 58px);
     line-height: 1.15;
     color: #2d3b33;
     margin-bottom: 25px;
@@ -668,7 +677,7 @@ button {
 }
 
 .about-content > p:not(.section-label) {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.9;
     color: #7e8882;
     margin-bottom: 16px;
@@ -702,8 +711,8 @@ button {
 }
 
 .feature-icon {
-    width: 62px;
-    height: 62px;
+    width: 70px;
+    height: 70px;
     margin: 0 auto 20px;
     border-radius: 50%;
     background: #edf4ed;
@@ -711,17 +720,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 27px;
+    font-size: 31px;
 }
 
 .feature-card h3 {
-    font-size: 17px;
+    font-size: 19px;
     color: #344239;
     margin-bottom: 10px;
 }
 
 .feature-card p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.8;
     color: #929a95;
 }
@@ -739,36 +748,37 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
-    font-size: 28px;
+    gap: 8px;
+    font-size: 32px;
     font-weight: 800;
 }
 
 .footer-logo i {
-    font-size: 30px;
+    font-size: 34px;
 }
 
 footer > p {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
     color: #c4cec7;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     margin: 25px 0 40px;
 }
 
 .social-icons a {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
     transition: 0.3s ease;
 }
 
@@ -781,7 +791,25 @@ footer > p {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     color: #aebbb2;
-    font-size: 10px;
+    font-size: 11px;
+}
+
+/* ================= JS ANIMATIONS ================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar nav a.active {
+    color: #5b806b;
+    font-weight: 700;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -828,6 +856,8 @@ footer > p {
     }
 
 }
+
+/* ================= TABLET / MOBILE ================= */
 
 @media (max-width: 800px) {
 
@@ -896,7 +926,33 @@ footer > p {
         margin-top: 10px;
     }
 
+    /* Mobile navigation */
+
+    .navbar nav.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 5%;
+        right: 5%;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(50, 70, 58, 0.12);
+        border: 1px solid #eeeae1;
+    }
+
+    .navbar nav.active a {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 17px;
+    }
+
 }
+
+/* ================= SMALL MOBILE ================= */
 
 @media (max-width: 550px) {
 
@@ -905,16 +961,46 @@ footer > p {
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 27px;
+    }
+
+    .logo i {
+        font-size: 30px;
+    }
+
+    .cart-btn,
+    .menu-btn {
+        width: 46px;
+        height: 46px;
+    }
+
+    .cart-btn {
+        font-size: 21px;
+    }
+
+    .menu-btn {
+        font-size: 23px;
     }
 
     .hero {
         padding: 50px 5%;
     }
 
+    .small-title {
+        font-size: 15px;
+    }
+
+    .small-title i {
+        font-size: 19px;
+    }
+
     .hero h1 {
-        font-size: 48px;
+        font-size: 50px;
         letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 16px;
     }
 
     .hero-buttons {
@@ -925,12 +1011,22 @@ footer > p {
         width: 100%;
     }
 
+    .primary-btn,
+    .secondary-btn {
+        font-size: 16px;
+        padding: 16px 28px;
+    }
+
     .hero-stats {
         gap: 20px;
     }
 
     .hero-stats strong {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .hero-stats span {
+        font-size: 11px;
     }
 
     .product-grid,
@@ -947,8 +1043,16 @@ footer > p {
         margin-bottom: 35px;
     }
 
+    .section-heading > p {
+        font-size: 11px;
+    }
+
     .section-heading h2 {
-        font-size: 34px;
+        font-size: 36px;
+    }
+
+    .section-heading > span {
+        font-size: 14px;
     }
 
     .hero-image {
@@ -985,27 +1089,36 @@ footer > p {
         font-size: 22px;
     }
 
+    .bottle-label small {
+        font-size: 8px;
+    }
+
+    .bottle-label span {
+        font-size: 7px;
+    }
+
     .milk-bottle > i {
         top: 50px;
-        font-size: 35px;
+        font-size: 38px;
     }
 
     .floating-card {
-        padding: 9px 11px;
+        padding: 10px 13px;
+        gap: 9px;
     }
 
     .floating-card > i {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
     }
 
     .floating-card strong {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .floating-card small {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .card-one {
@@ -1014,6 +1127,32 @@ footer > p {
 
     .card-two {
         right: -5px;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .product-info {
+        padding: 23px;
+    }
+
+    .product-info h3 {
+        font-size: 21px;
+    }
+
+    .product-info p {
+        font-size: 13px;
+    }
+
+    .product-bottom strong {
+        font-size: 20px;
+    }
+
+    .add-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
     }
 
     .about-image {
@@ -1029,49 +1168,47 @@ footer > p {
         font-size: 65px;
     }
 
-}
-/* ================= JS ANIMATIONS ================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: 0.7s ease;
-}
-
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.navbar nav a.active {
-    color: #5b806b;
-    font-weight: 700;
-}
-
-
-/* ================= MOBILE NAV ================= */
-
-@media (max-width: 800px) {
-
-    .navbar nav.active {
-        display: flex;
-        position: absolute;
-        top: 70px;
-        left: 5%;
-        right: 5%;
-        padding: 22px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-        background: rgba(255, 255, 255, 0.98);
-        border-radius: 18px;
-        box-shadow: 0 15px 35px rgba(50, 70, 58, 0.12);
-        border: 1px solid #eeeae1;
+    .about-content h2 {
+        font-size: 40px;
     }
 
-    .navbar nav.active a {
-        width: 100%;
-        padding: 5px 0;
+    .about-content > p:not(.section-label) {
+        font-size: 15px;
     }
 
+    .feature-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 29px;
+    }
+
+    .feature-card h3 {
+        font-size: 19px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-logo i {
+        font-size: 30px;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
 }
