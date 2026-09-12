@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* ================= GLOBAL ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -138,8 +140,13 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+
     background:
-        radial-gradient(circle at 85% 30%, #edf4ec 0%, transparent 28%),
+        radial-gradient(
+            circle at 85% 30%,
+            #edf4ec 0%,
+            transparent 28%
+        ),
         #fffdf8;
 }
 
@@ -154,19 +161,19 @@ button {
     align-items: center;
     gap: 13px;
     color: #6b9079;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .small-title i {
-    font-size: 26px;
+    font-size: 27px;
 }
 
 .hero h1 {
     max-width: 650px;
     font-size: clamp(60px, 7vw, 96px);
-    line-height: 1.06;
+    line-height: 1.05;
     letter-spacing: -3px;
     color: #26352d;
     font-weight: 800;
@@ -197,18 +204,18 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 19px 34px;
+    padding: 20px 36px;
     border-radius: 50px;
     background: #5f836d;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     box-shadow: 0 12px 25px rgba(95, 131, 109, 0.2);
     transition: 0.3s ease;
 }
 
 .primary-btn i {
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .primary-btn:hover {
@@ -222,23 +229,26 @@ button {
     align-items: center;
     justify-content: center;
     gap: 9px;
-    padding: 18px 34px;
+    padding: 19px 36px;
     border-radius: 50px;
     border: 1px solid #d9e1da;
     color: #5d6c63;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
 .secondary-btn i {
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .secondary-btn:hover {
     background: #eef4ef;
     border-color: #cbdacf;
 }
+
+
+/* ================= HERO STATS ================= */
 
 .hero-stats {
     display: flex;
@@ -252,7 +262,7 @@ button {
 }
 
 .hero-stats strong {
-    font-size: 29px;
+    font-size: 30px;
     color: #456553;
 }
 
@@ -274,21 +284,25 @@ button {
     justify-content: center;
 }
 
+
+/*
+   GREEN HERO CIRCLE REMOVED
+   .milk-circle is intentionally hidden
+*/
+
 .milk-circle {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: #eaf2e9;
-    box-shadow:
-        0 0 0 25px rgba(234, 242, 233, 0.5),
-        0 0 0 50px rgba(234, 242, 233, 0.25);
+    display: none !important;
 }
 
+
+/* ================= HERO BOTTLE ================= */
+
 .milk-bottle {
-    width: 190px;
-    height: 360px;
+    width: 185px;
+    height: 350px;
+
     border-radius: 40px 40px 45px 45px;
+
     background: linear-gradient(
         90deg,
         #f4f5ef,
@@ -296,9 +310,13 @@ button {
         #ffffff 70%,
         #e7e9e2
     );
+
     position: relative;
     z-index: 3;
-    box-shadow: 18px 25px 45px rgba(65, 84, 72, 0.16);
+
+    box-shadow:
+        18px 25px 45px rgba(65, 84, 72, 0.16);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,44 +324,65 @@ button {
 
 .milk-bottle::before {
     content: "";
+
     position: absolute;
-    width: 95px;
-    height: 50px;
+
+    width: 92px;
+    height: 48px;
+
     top: -40px;
-    left: 47px;
+    left: 46px;
+
     border-radius: 20px 20px 8px 8px;
+
     background: #eef0e9;
-    box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.05);
+
+    box-shadow:
+        inset 0 -8px 10px rgba(0, 0, 0, 0.05);
 }
 
 .milk-bottle::after {
     content: "";
+
     position: absolute;
-    width: 108px;
+
+    width: 105px;
     height: 22px;
+
     top: -48px;
-    left: 41px;
+    left: 40px;
+
     border-radius: 50%;
+
     background: #dfe4db;
 }
 
 .milk-bottle > i {
     position: absolute;
     top: 68px;
+
     font-size: 58px;
     color: #6d927b;
 }
 
+
+/* ================= BOTTLE LABEL ================= */
+
 .bottle-label {
-    width: 145px;
-    height: 135px;
+    width: 140px;
+    height: 130px;
+
     margin-top: 45px;
+
     border-radius: 15px;
+
     background: #eaf1e9;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     transform: rotate(-2deg);
 }
 
@@ -371,25 +410,37 @@ button {
 .floating-card {
     position: absolute;
     z-index: 5;
+
     display: flex;
     align-items: center;
+
     gap: 16px;
+
     padding: 18px 23px;
+
     border-radius: 15px;
+
     background: rgba(255, 255, 255, 0.9);
+
     backdrop-filter: blur(10px);
-    box-shadow: 0 15px 35px rgba(52, 70, 59, 0.12);
+
+    box-shadow:
+        0 15px 35px rgba(52, 70, 59, 0.12);
 }
 
 .floating-card > i {
     width: 52px;
     height: 52px;
+
     border-radius: 50%;
+
     background: #edf4ed;
     color: #5f836d;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 25px;
 }
 
@@ -417,6 +468,19 @@ button {
 .card-two {
     right: 0;
     bottom: 20%;
+}
+
+
+/* ================= REAL HERO IMAGE ================= */
+
+.hero-image img {
+    max-width: 92%;
+    max-height: 92%;
+
+    object-fit: contain;
+
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -467,33 +531,49 @@ button {
 
 .product-card {
     background: #fff;
+
     border: 1px solid #eeeae1;
     border-radius: 24px;
+
     overflow: hidden;
+
     transition: 0.35s ease;
 }
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(67, 79, 69, 0.1);
+
+    box-shadow:
+        0 20px 45px rgba(67, 79, 69, 0.1);
 }
+
+
+/* ================= PRODUCT IMAGE ================= */
 
 .product-image {
     height: 245px;
+
     background: #edf4ed;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: relative;
+
     overflow: hidden;
 }
 
 .product-image::before {
     content: "";
+
     position: absolute;
+
     width: 180px;
     height: 180px;
+
     border-radius: 50%;
+
     background: rgba(255, 255, 255, 0.65);
 }
 
@@ -509,10 +589,15 @@ button {
     background: #eeeef4;
 }
 
+
+/* ================= PRODUCT BOTTLE ================= */
+
 .product-bottle {
-    width: 95px;
-    height: 165px;
+    width: 92px;
+    height: 160px;
+
     border-radius: 21px 21px 27px 27px;
+
     background: linear-gradient(
         90deg,
         #e7e9e3,
@@ -520,28 +605,39 @@ button {
         #ffffff 70%,
         #e1e3dc
     );
+
     position: relative;
     z-index: 2;
-    box-shadow: 8px 12px 22px rgba(56, 69, 60, 0.13);
+
+    box-shadow:
+        8px 12px 22px rgba(56, 69, 60, 0.13);
 }
 
 .product-bottle::before {
     content: "";
+
     position: absolute;
-    width: 50px;
-    height: 26px;
+
+    width: 48px;
+    height: 25px;
+
     top: -21px;
     left: 22px;
+
     border-radius: 10px 10px 3px 3px;
+
     background: #e1e5dd;
 }
 
 .product-bottle i {
     position: absolute;
-    top: 31px;
-    left: 35px;
+
+    top: 30px;
+    left: 34px;
+
     color: #70927c;
-    font-size: 28px;
+
+    font-size: 27px;
 }
 
 .chocolate .product-bottle i {
@@ -556,27 +652,51 @@ button {
     color: #8886aa;
 }
 
+
+/* ================= REAL PRODUCT IMAGE ================= */
+
+.product-image img {
+    max-width: 88%;
+    max-height: 88%;
+
+    object-fit: contain;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+/* ================= PRODUCT INFO ================= */
+
 .product-info {
     padding: 22px;
 }
 
 .product-category {
     font-size: 12px;
+
     text-transform: uppercase;
+
     letter-spacing: 2px;
+
     color: #79917f;
+
     font-weight: 700;
 }
 
 .product-info h3 {
     font-size: 24px;
+
     color: #35443b;
+
     margin: 7px 0;
 }
 
 .product-info p {
     font-size: 15px;
+
     line-height: 1.8;
+
     color: #929993;
 }
 
@@ -584,26 +704,33 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     margin-top: 17px;
 }
 
 .product-bottom strong {
     color: #557663;
+
     font-size: 23px;
 }
 
 .add-btn {
     width: 52px;
     height: 52px;
+
     border-radius: 50%;
+
     background: #5f836d;
     color: white;
+
     font-size: 27px;
+
     transition: 0.3s ease;
 }
 
 .add-btn:hover {
     transform: rotate(90deg) scale(1.08);
+
     background: #4e725d;
 }
 
@@ -612,30 +739,41 @@ button {
 
 .about {
     padding: 120px 10%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 90px;
+
     background: #fffdf8;
 }
 
 .about-image {
     width: 45%;
     height: 470px;
+
     border-radius: 35px;
+
     background: #edf4ed;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: relative;
+
     overflow: hidden;
 }
 
 .about-image::before,
 .about-image::after {
     content: "";
+
     position: absolute;
+
     border-radius: 50%;
+
     border: 1px solid rgba(95, 131, 109, 0.15);
 }
 
@@ -650,21 +788,37 @@ button {
 }
 
 .about-circle {
-    width: 190px;
-    height: 190px;
+    width: 195px;
+    height: 195px;
+
     border-radius: 50%;
+
     background: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: relative;
     z-index: 2;
-    box-shadow: 0 20px 45px rgba(62, 82, 69, 0.1);
+
+    box-shadow:
+        0 20px 45px rgba(62, 82, 69, 0.1);
 }
 
 .about-circle i {
     font-size: 105px;
     color: #6d927b;
+}
+
+.about-image img {
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+
+    position: relative;
+    z-index: 3;
 }
 
 .about-content {
@@ -673,16 +827,23 @@ button {
 
 .section-label {
     color: #70917b;
+
     font-size: 15px;
+
     letter-spacing: 4px;
+
     font-weight: 700;
+
     margin-bottom: 15px;
 }
 
 .about-content h2 {
     font-size: clamp(42px, 5vw, 64px);
+
     line-height: 1.15;
+
     color: #2d3b33;
+
     margin-bottom: 25px;
 }
 
@@ -692,8 +853,11 @@ button {
 
 .about-content > p:not(.section-label) {
     font-size: 18px;
+
     line-height: 1.9;
+
     color: #7e8882;
+
     margin-bottom: 16px;
 }
 
@@ -702,51 +866,71 @@ button {
 
 .why-us {
     padding: 110px 7%;
+
     background: #f5f7f2;
 }
 
 .features {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 22px;
 }
 
 .feature-card {
     text-align: center;
+
     padding: 38px 25px;
+
     background: white;
+
     border-radius: 22px;
+
     border: 1px solid #ebeee9;
+
     transition: 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(64, 80, 69, 0.08);
+
+    box-shadow:
+        0 18px 40px rgba(64, 80, 69, 0.08);
 }
 
 .feature-icon {
     width: 82px;
     height: 82px;
+
     margin: 0 auto 20px;
+
     border-radius: 50%;
+
     background: #edf4ed;
+
     color: #638570;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 37px;
 }
 
 .feature-card h3 {
     font-size: 22px;
+
     color: #344239;
+
     margin-bottom: 10px;
 }
 
 .feature-card p {
     font-size: 15px;
+
     line-height: 1.9;
+
     color: #929a95;
 }
 
@@ -755,17 +939,24 @@ button {
 
 footer {
     padding: 65px 7% 25px;
+
     text-align: center;
+
     background: #30453a;
+
     color: white;
 }
 
 .footer-logo {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 8px;
+
     font-size: 38px;
+
     font-weight: 800;
 }
 
@@ -775,38 +966,53 @@ footer {
 
 footer > p {
     margin-top: 10px;
+
     font-size: 15px;
+
     color: #c4cec7;
 }
 
 .social-icons {
     display: flex;
+
     justify-content: center;
+
     gap: 16px;
+
     margin: 25px 0 40px;
 }
 
 .social-icons a {
     width: 52px;
     height: 52px;
+
     border-radius: 50%;
+
     background: rgba(255, 255, 255, 0.1);
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     font-size: 22px;
+
     transition: 0.3s ease;
 }
 
 .social-icons a:hover {
     background: rgba(255, 255, 255, 0.2);
+
     transform: translateY(-3px);
 }
 
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+
     padding-top: 20px;
+
     color: #aebbb2;
+
     font-size: 13px;
 }
 
@@ -815,12 +1021,15 @@ footer > p {
 
 .reveal {
     opacity: 0;
+
     transform: translateY(35px);
+
     transition: 0.7s ease;
 }
 
 .reveal.show {
     opacity: 1;
+
     transform: translateY(0);
 }
 
@@ -833,8 +1042,38 @@ footer > p {
         padding: 0 5%;
     }
 
+    .logo {
+        font-size: 34px;
+    }
+
+    .logo i {
+        font-size: 38px;
+    }
+
+    .navbar nav {
+        gap: 28px;
+    }
+
+    .navbar nav a {
+        font-size: 17px;
+    }
+
     .hero {
         padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: clamp(52px, 6vw, 78px);
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        font-size: 17px;
+        padding: 17px 30px;
     }
 
     .product-grid,
@@ -844,11 +1083,6 @@ footer > p {
 
     .hero-image {
         min-height: 500px;
-    }
-
-    .milk-circle {
-        width: 360px;
-        height: 360px;
     }
 
     .milk-bottle {
@@ -871,8 +1105,8 @@ footer > p {
         height: 125px;
     }
 
-    .hero h1 {
-        font-size: clamp(50px, 6vw, 75px);
+    .section-heading h2 {
+        font-size: 50px;
     }
 }
 
@@ -893,8 +1127,31 @@ footer > p {
         display: block;
     }
 
+    .logo {
+        font-size: 32px;
+    }
+
+    .logo i {
+        font-size: 36px;
+    }
+
+    .cart-btn,
+    .menu-btn {
+        width: 52px;
+        height: 52px;
+    }
+
+    .cart-btn {
+        font-size: 24px;
+    }
+
+    .menu-btn {
+        font-size: 27px;
+    }
+
     .hero {
         flex-direction: column;
+
         padding: 60px 5%;
     }
 
@@ -909,9 +1166,21 @@ footer > p {
 
     .small-title {
         justify-content: center;
+
+        font-size: 18px;
+    }
+
+    .small-title i {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
     }
 
     .hero-text {
+        font-size: 18px;
+
         margin-left: auto;
         margin-right: auto;
     }
@@ -920,16 +1189,55 @@ footer > p {
         justify-content: center;
     }
 
+    .primary-btn,
+    .secondary-btn {
+        font-size: 18px;
+    }
+
     .hero-stats {
         justify-content: center;
+    }
+
+    .hero-stats strong {
+        font-size: 26px;
+    }
+
+    .hero-stats span {
+        font-size: 13px;
     }
 
     .hero-image {
         min-height: 470px;
     }
 
+    .milk-bottle {
+        width: 165px;
+        height: 315px;
+    }
+
+    .milk-bottle::before {
+        width: 82px;
+        left: 41px;
+    }
+
+    .milk-bottle::after {
+        width: 94px;
+        left: 35px;
+    }
+
+    .bottle-label {
+        width: 125px;
+        height: 118px;
+    }
+
+    .product-grid,
+    .features {
+        grid-template-columns: 1fr;
+    }
+
     .about {
         flex-direction: column;
+
         padding: 90px 7%;
     }
 
@@ -942,35 +1250,53 @@ footer > p {
         text-align: center;
     }
 
+    .about-content h2 {
+        font-size: 48px;
+    }
+
     .about-content .primary-btn {
         margin-top: 10px;
     }
 
     .navbar nav.active {
         display: flex;
+
         position: absolute;
+
         top: 70px;
+
         left: 5%;
         right: 5%;
+
         padding: 22px;
+
         flex-direction: column;
+
         align-items: flex-start;
+
         gap: 18px;
+
         background: rgba(255, 255, 255, 0.98);
+
         border-radius: 18px;
-        box-shadow: 0 15px 35px rgba(50, 70, 58, 0.12);
+
+        box-shadow:
+            0 15px 35px rgba(50, 70, 58, 0.12);
+
         border: 1px solid #eeeae1;
     }
 
     .navbar nav.active a {
         width: 100%;
+
         padding: 5px 0;
+
         font-size: 19px;
     }
 
-    .product-grid,
-    .features {
-        grid-template-columns: 1fr;
+    .product-image .product-bottle {
+        width: 90px;
+        height: 158px;
     }
 }
 
@@ -993,16 +1319,16 @@ footer > p {
 
     .cart-btn,
     .menu-btn {
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
     }
 
     .cart-btn {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .menu-btn {
-        font-size: 26px;
+        font-size: 25px;
     }
 
     .hero {
@@ -1014,16 +1340,17 @@ footer > p {
     }
 
     .small-title i {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .hero h1 {
-        font-size: 52px;
+        font-size: 50px;
+
         letter-spacing: -2px;
     }
 
     .hero-text {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .hero-buttons {
@@ -1037,8 +1364,15 @@ footer > p {
     .primary-btn,
     .secondary-btn {
         width: 100%;
-        font-size: 17px;
-        padding: 18px 28px;
+
+        font-size: 16px;
+
+        padding: 17px 25px;
+    }
+
+    .primary-btn i,
+    .secondary-btn i {
+        font-size: 20px;
     }
 
     .hero-stats {
@@ -1046,98 +1380,91 @@ footer > p {
     }
 
     .hero-stats strong {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .hero-stats span {
-        font-size: 12px;
-    }
-
-    .products,
-    .why-us {
-        padding: 80px 5%;
-    }
-
-    .section-heading {
-        margin-bottom: 35px;
-    }
-
-    .section-heading > p {
         font-size: 11px;
     }
 
-    .section-heading h2 {
-        font-size: 40px;
-    }
 
-    .section-heading > span {
-        font-size: 15px;
-    }
-
-
-    /* Smaller but still clearly visible hero image */
+    /* ================= MOBILE HERO IMAGE ================= */
 
     .hero-image {
         min-height: 430px;
     }
 
+    /*
+       CIRCLE REMAINS HIDDEN ON MOBILE
+    */
+
     .milk-circle {
-        width: 290px;
-        height: 290px;
+        display: none !important;
     }
 
-    .milk-bottle {
-        width: 145px;
-        height: 280px;
+    .hero-image .milk-bottle {
+        width: 140px;
+        height: 270px;
     }
 
-    .milk-bottle::before {
-        width: 72px;
-        height: 40px;
-        left: 36px;
-        top: -32px;
+    .hero-image .milk-bottle::before {
+        width: 70px;
+
+        height: 38px;
+
+        left: 35px;
+
+        top: -31px;
     }
 
-    .milk-bottle::after {
-        width: 84px;
-        left: 30px;
-        top: -39px;
+    .hero-image .milk-bottle::after {
+        width: 82px;
+
+        left: 29px;
+
+        top: -38px;
     }
 
-    .bottle-label {
-        width: 110px;
-        height: 105px;
+    .hero-image .bottle-label {
+        width: 108px;
+
+        height: 102px;
+
         margin-top: 32px;
     }
 
-    .bottle-label strong {
+    .hero-image .bottle-label strong {
         font-size: 22px;
     }
 
-    .bottle-label small {
+    .hero-image .bottle-label small {
         font-size: 8px;
     }
 
-    .bottle-label span {
+    .hero-image .bottle-label span {
         font-size: 7px;
     }
 
-    .milk-bottle > i {
+    .hero-image .milk-bottle > i {
         top: 48px;
-        font-size: 37px;
+
+        font-size: 36px;
     }
 
 
-    /* Floating cards */
+    /* ================= FLOATING CARDS ================= */
 
     .floating-card {
         padding: 10px 13px;
+
         gap: 9px;
     }
 
     .floating-card > i {
         width: 34px;
+
         height: 34px;
+
         font-size: 16px;
     }
 
@@ -1158,26 +1485,52 @@ footer > p {
     }
 
 
-    /* Product images slightly smaller */
+    /* ================= PRODUCTS ================= */
+
+    .products,
+    .why-us {
+        padding: 80px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading > p {
+        font-size: 11px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    .section-heading > span {
+        font-size: 14px;
+    }
 
     .product-image {
         height: 245px;
     }
 
-    .product-bottle {
-        width: 90px;
-        height: 158px;
+    .product-image .product-bottle {
+        width: 85px;
+
+        height: 150px;
     }
 
     .product-bottle::before {
         width: 47px;
+
         height: 24px;
+
         left: 21px;
     }
 
     .product-bottle i {
         top: 29px;
+
         left: 33px;
+
         font-size: 26px;
     }
 
@@ -1186,7 +1539,7 @@ footer > p {
     }
 
     .product-info h3 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .product-info p {
@@ -1199,24 +1552,27 @@ footer > p {
 
     .add-btn {
         width: 48px;
+
         height: 48px;
+
         font-size: 24px;
     }
 
 
-    /* About */
+    /* ================= ABOUT ================= */
 
     .about-image {
         height: 350px;
     }
 
     .about-circle {
-        width: 160px;
-        height: 160px;
+        width: 150px;
+
+        height: 150px;
     }
 
     .about-circle i {
-        font-size: 68px;
+        font-size: 65px;
     }
 
     .about-content h2 {
@@ -1228,11 +1584,13 @@ footer > p {
     }
 
 
-    /* Features */
+    /* ================= FEATURES ================= */
 
     .feature-icon {
         width: 72px;
+
         height: 72px;
+
         font-size: 31px;
     }
 
@@ -1245,14 +1603,14 @@ footer > p {
     }
 
 
-    /* Footer */
+    /* ================= FOOTER ================= */
 
     .footer-logo {
         font-size: 30px;
     }
 
     .footer-logo i {
-        font-size: 33px;
+        font-size: 34px;
     }
 
     footer > p {
@@ -1261,659 +1619,13 @@ footer > p {
 
     .social-icons a {
         width: 45px;
+
         height: 45px;
+
         font-size: 19px;
     }
 
     .copyright {
         font-size: 10px;
-    }
-}
-/* =========================================
-   ALL IMAGES - SLIGHTLY SMALLER
-   ========================================= */
-
-/* HERO BOTTLE */
-.hero-image .milk-bottle {
-    width: 185px !important;
-    height: 350px !important;
-}
-
-.hero-image .milk-circle {
-    width: 390px !important;
-    height: 390px !important;
-}
-
-/* Bottle cap */
-.hero-image .milk-bottle::before {
-    width: 92px !important;
-    height: 48px !important;
-    left: 46px !important;
-}
-
-.hero-image .milk-bottle::after {
-    width: 105px !important;
-    left: 40px !important;
-}
-
-/* Bottle label */
-.hero-image .bottle-label {
-    width: 140px !important;
-    height: 130px !important;
-}
-
-/* Bottle icon */
-.hero-image .milk-bottle > i {
-    font-size: 55px !important;
-}
-
-
-/* =========================================
-   PRODUCT IMAGES
-   ========================================= */
-
-.product-image .product-bottle {
-    width: 92px !important;
-    height: 160px !important;
-}
-
-.product-image .product-bottle::before {
-    width: 48px !important;
-    height: 25px !important;
-    left: 22px !important;
-}
-
-.product-image .product-bottle i {
-    font-size: 27px !important;
-    left: 34px !important;
-    top: 30px !important;
-}
-
-
-/* =========================================
-   ABOUT IMAGE
-   ========================================= */
-
-.about-image .about-circle {
-    width: 195px !important;
-    height: 195px !important;
-}
-
-.about-image .about-circle i {
-    font-size: 100px !important;
-}
-
-
-/* =========================================
-   IF YOUR WEBSITE USES REAL <img> TAGS
-   ========================================= */
-
-.hero-image img {
-    max-width: 92% !important;
-    max-height: 92% !important;
-}
-
-.product-image img {
-    max-width: 88% !important;
-    max-height: 88% !important;
-    object-fit: contain !important;
-}
-
-.about-image img {
-    max-width: 90% !important;
-    max-height: 90% !important;
-    object-fit: contain !important;
-}
-
-
-/* =========================================
-   MOBILE - KEEP IMAGES VISIBLE
-   ========================================= */
-
-@media (max-width: 800px) {
-
-    .hero-image .milk-circle {
-        width: 330px !important;
-        height: 330px !important;
-    }
-
-    .hero-image .milk-bottle {
-        width: 165px !important;
-        height: 315px !important;
-    }
-
-    .hero-image .milk-bottle::before {
-        width: 82px !important;
-        left: 41px !important;
-    }
-
-    .hero-image .milk-bottle::after {
-        width: 94px !important;
-        left: 35px !important;
-    }
-
-    .hero-image .bottle-label {
-        width: 125px !important;
-        height: 118px !important;
-    }
-
-    .product-image .product-bottle {
-        width: 90px !important;
-        height: 158px !important;
-    }
-}
-
-
-@media (max-width: 550px) {
-
-    .hero-image .milk-circle {
-        width: 280px !important;
-        height: 280px !important;
-    }
-
-    .hero-image .milk-bottle {
-        width: 140px !important;
-        height: 270px !important;
-    }
-
-    .hero-image .milk-bottle::before {
-        width: 70px !important;
-        height: 38px !important;
-        left: 35px !important;
-        top: -31px !important;
-    }
-
-    .hero-image .milk-bottle::after {
-        width: 82px !important;
-        left: 29px !important;
-        top: -38px !important;
-    }
-
-    .hero-image .bottle-label {
-        width: 108px !important;
-        height: 102px !important;
-    }
-
-    .hero-image .milk-bottle > i {
-        font-size: 36px !important;
-    }
-
-    .product-image .product-bottle {
-        width: 85px !important;
-        height: 150px !important;
-    }
-
-    .about-image .about-circle {
-        width: 150px !important;
-        height: 150px !important;
-    }
-
-    .about-image .about-circle i {
-        font-size: 65px !important;
-    }
-}
-/* =========================================
-   BIG TEXT + BIG ICONS + BIG BUTTONS
-   PASTE AT THE VERY END OF CSS
-   ========================================= */
-
-
-/* ================= NAVBAR ================= */
-
-.logo {
-    font-size: 38px !important;
-}
-
-.logo i {
-    font-size: 42px !important;
-}
-
-.navbar nav {
-    gap: 42px !important;
-}
-
-.navbar nav a {
-    font-size: 18px !important;
-}
-
-.cart-btn {
-    width: 58px !important;
-    height: 58px !important;
-    font-size: 27px !important;
-}
-
-.cart-btn span {
-    width: 23px !important;
-    height: 23px !important;
-    font-size: 12px !important;
-}
-
-.menu-btn {
-    width: 58px !important;
-    height: 58px !important;
-    font-size: 29px !important;
-}
-
-
-/* ================= HERO TEXT ================= */
-
-.small-title {
-    font-size: 20px !important;
-    gap: 13px !important;
-}
-
-.small-title i {
-    font-size: 27px !important;
-}
-
-.hero h1 {
-    font-size: clamp(60px, 7vw, 96px) !important;
-    line-height: 1.05 !important;
-}
-
-.hero-text {
-    font-size: 20px !important;
-    line-height: 1.9 !important;
-}
-
-.hero-buttons {
-    gap: 18px !important;
-}
-
-.primary-btn {
-    padding: 20px 36px !important;
-    font-size: 19px !important;
-}
-
-.primary-btn i {
-    font-size: 23px !important;
-}
-
-.secondary-btn {
-    padding: 19px 36px !important;
-    font-size: 19px !important;
-}
-
-.secondary-btn i {
-    font-size: 23px !important;
-}
-
-
-/* ================= HERO STATS ================= */
-
-.hero-stats {
-    gap: 55px !important;
-}
-
-.hero-stats strong {
-    font-size: 30px !important;
-}
-
-.hero-stats span {
-    font-size: 15px !important;
-}
-
-
-/* ================= HERO BOTTLE ICON ================= */
-
-.milk-bottle > i {
-    font-size: 58px !important;
-}
-
-.bottle-label small {
-    font-size: 12px !important;
-}
-
-.bottle-label strong {
-    font-size: 37px !important;
-}
-
-.bottle-label span {
-    font-size: 11px !important;
-}
-
-
-/* ================= FLOATING CARDS ================= */
-
-.floating-card {
-    padding: 18px 23px !important;
-    gap: 16px !important;
-}
-
-.floating-card > i {
-    width: 52px !important;
-    height: 52px !important;
-    font-size: 25px !important;
-}
-
-.floating-card strong {
-    font-size: 15px !important;
-}
-
-.floating-card small {
-    font-size: 12px !important;
-}
-
-
-/* ================= SECTION HEADINGS ================= */
-
-.section-heading > p {
-    font-size: 15px !important;
-    letter-spacing: 4px !important;
-}
-
-.section-heading h2 {
-    font-size: clamp(42px, 5vw, 62px) !important;
-}
-
-.section-heading > span {
-    font-size: 18px !important;
-}
-
-
-/* ================= PRODUCT TEXT ================= */
-
-.product-category {
-    font-size: 12px !important;
-    letter-spacing: 2px !important;
-}
-
-.product-info h3 {
-    font-size: 24px !important;
-}
-
-.product-info p {
-    font-size: 15px !important;
-    line-height: 1.8 !important;
-}
-
-.product-bottom strong {
-    font-size: 23px !important;
-}
-
-.add-btn {
-    width: 52px !important;
-    height: 52px !important;
-    font-size: 27px !important;
-}
-
-
-/* ================= ABOUT ================= */
-
-.section-label {
-    font-size: 15px !important;
-    letter-spacing: 4px !important;
-}
-
-.about-content h2 {
-    font-size: clamp(42px, 5vw, 64px) !important;
-}
-
-.about-content > p:not(.section-label) {
-    font-size: 18px !important;
-    line-height: 1.9 !important;
-}
-
-.about-circle i {
-    font-size: 105px !important;
-}
-
-
-/* ================= WHY US ================= */
-
-.feature-icon {
-    width: 82px !important;
-    height: 82px !important;
-    font-size: 37px !important;
-}
-
-.feature-card h3 {
-    font-size: 22px !important;
-}
-
-.feature-card p {
-    font-size: 15px !important;
-    line-height: 1.9 !important;
-}
-
-
-/* ================= FOOTER ================= */
-
-.footer-logo {
-    font-size: 38px !important;
-}
-
-.footer-logo i {
-    font-size: 42px !important;
-}
-
-footer > p {
-    font-size: 15px !important;
-}
-
-.social-icons {
-    gap: 16px !important;
-}
-
-.social-icons a {
-    width: 52px !important;
-    height: 52px !important;
-    font-size: 22px !important;
-}
-
-.copyright {
-    font-size: 13px !important;
-}
-
-
-/* ================= TABLET ================= */
-
-@media (max-width: 1100px) {
-
-    .logo {
-        font-size: 34px !important;
-    }
-
-    .logo i {
-        font-size: 38px !important;
-    }
-
-    .navbar nav {
-        gap: 28px !important;
-    }
-
-    .navbar nav a {
-        font-size: 17px !important;
-    }
-
-    .hero h1 {
-        font-size: clamp(52px, 6vw, 78px) !important;
-    }
-
-    .hero-text {
-        font-size: 18px !important;
-    }
-
-    .primary-btn,
-    .secondary-btn {
-        font-size: 17px !important;
-        padding: 17px 30px !important;
-    }
-
-    .section-heading h2 {
-        font-size: 50px !important;
-    }
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 800px) {
-
-    .logo {
-        font-size: 32px !important;
-    }
-
-    .logo i {
-        font-size: 36px !important;
-    }
-
-    .cart-btn,
-    .menu-btn {
-        width: 52px !important;
-        height: 52px !important;
-    }
-
-    .cart-btn {
-        font-size: 24px !important;
-    }
-
-    .menu-btn {
-        font-size: 27px !important;
-    }
-
-    .hero h1 {
-        font-size: 58px !important;
-    }
-
-    .hero-text {
-        font-size: 18px !important;
-    }
-
-    .small-title {
-        font-size: 18px !important;
-    }
-
-    .small-title i {
-        font-size: 24px !important;
-    }
-
-    .primary-btn,
-    .secondary-btn {
-        font-size: 18px !important;
-    }
-
-    .hero-stats strong {
-        font-size: 26px !important;
-    }
-
-    .hero-stats span {
-        font-size: 13px !important;
-    }
-
-    .section-heading h2 {
-        font-size: 46px !important;
-    }
-
-    .about-content h2 {
-        font-size: 48px !important;
-    }
-}
-
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 550px) {
-
-    .logo {
-        font-size: 29px !important;
-    }
-
-    .logo i {
-        font-size: 33px !important;
-    }
-
-    .cart-btn,
-    .menu-btn {
-        width: 48px !important;
-        height: 48px !important;
-    }
-
-    .cart-btn {
-        font-size: 22px !important;
-    }
-
-    .menu-btn {
-        font-size: 25px !important;
-    }
-
-    .hero h1 {
-        font-size: 50px !important;
-        letter-spacing: -2px !important;
-    }
-
-    .hero-text {
-        font-size: 16px !important;
-    }
-
-    .small-title {
-        font-size: 16px !important;
-    }
-
-    .small-title i {
-        font-size: 21px !important;
-    }
-
-    .primary-btn,
-    .secondary-btn {
-        font-size: 16px !important;
-        padding: 17px 25px !important;
-    }
-
-    .primary-btn i,
-    .secondary-btn i {
-        font-size: 20px !important;
-    }
-
-    .hero-stats strong {
-        font-size: 21px !important;
-    }
-
-    .hero-stats span {
-        font-size: 11px !important;
-    }
-
-    .section-heading h2 {
-        font-size: 38px !important;
-    }
-
-    .section-heading > span {
-        font-size: 14px !important;
-    }
-
-    .product-info h3 {
-        font-size: 21px !important;
-    }
-
-    .product-info p {
-        font-size: 14px !important;
-    }
-
-    .product-bottom strong {
-        font-size: 21px !important;
-    }
-
-    .about-content h2 {
-        font-size: 40px !important;
-    }
-
-    .about-content > p:not(.section-label) {
-        font-size: 15px !important;
-    }
-
-    .feature-card h3 {
-        font-size: 20px !important;
-    }
-
-    .feature-card p {
-        font-size: 14px !important;
-    }
-
-    .footer-logo {
-        font-size: 30px !important;
-    }
-
-    .footer-logo i {
-        font-size: 34px !important;
     }
 }
